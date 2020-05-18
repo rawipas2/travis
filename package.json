@@ -7,8 +7,8 @@
 		"start": "ts-node app.ts",
 		"test": "jest",
 		"test-watch": "jest --watch",
-		"lint": "eslint ./",
-		"lint:fix": "eslint --fix ./"
+		"lint": "eslint 'src/**/*.ts'",
+		"lint:fix": "eslint --fix 'src/**/*.ts'"
 	},
 	"author": "",
 	"license": "ISC",
@@ -22,9 +22,9 @@
 	},
 	"devDependencies": {
 		"@types/jest": "^25.2.2",
-		"@typescript-eslint/eslint-plugin": "^2.33.0",
-		"@typescript-eslint/parser": "^2.33.0",
+		"babel-eslint": "^10.1.0",
 		"eslint": "^7.0.0",
+		"eslint-plugin-jest": "^23.13.1",
 		"husky": "^4.2.5",
 		"jest": "^26.0.1",
 		"prettier": "^2.0.5",
