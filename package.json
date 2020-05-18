@@ -1,13 +1,14 @@
 {
 	"name": "node_desing_pattern",
 	"version": "1.0.0",
-	"description": "",
 	"main": "index.js",
 	"scripts": {
 		"dev": "nodemon",
 		"start": "ts-node app.ts",
 		"test": "jest",
-		"test-watch": "jest --watch"
+		"test-watch": "jest --watch",
+		"lint": "eslint ./",
+		"lint:fix": "eslint --fix ./"
 	},
 	"author": "",
 	"license": "ISC",
@@ -16,10 +17,14 @@
 		"express": "^4.17.1",
 		"nodemon": "^2.0.4",
 		"ts-node": "^8.10.1",
-		"typescript": "^3.9.2"
+		"typescript": "^3.9.2",
+		"winston": "^3.2.1"
 	},
 	"devDependencies": {
 		"@types/jest": "^25.2.2",
+		"@typescript-eslint/eslint-plugin": "^2.33.0",
+		"@typescript-eslint/parser": "^2.33.0",
+		"eslint": "^7.0.0",
 		"husky": "^4.2.5",
 		"jest": "^26.0.1",
 		"prettier": "^2.0.5",
@@ -36,5 +41,15 @@
 		"tabWidth": 4,
 		"useTabs": true,
 		"semi": false
-	}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rawipas2/travis.git"
+	},
+	"keywords": [],
+	"bugs": {
+		"url": "https://github.com/rawipas2/travis/issues"
+	},
+	"homepage": "https://github.com/rawipas2/travis#readme",
+	"description": ""
 }
